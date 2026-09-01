@@ -1,0 +1,40 @@
+name: Build and Deploy Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create config.js from secrets
+        run: |
+          cat > config.js <<'EOF'
+          const EMAILJS_CONFIG = {
+            PUBLIC_KEY: '${{ secrets.EMAILJS_PUBLIC_KEY }}',
+            SERVICE_ID: '${{ secrets.EMAILJS_SERVICE_ID }}',
+            TEMPLATE_ID: '${{ secrets.EMAILJS_TEMPLATE_ID }}',
+            RECEIVER_EMAIL: '${{ secrets.EMAILJS_RECEIVER_EMAIL }}'
+          };
+          console.log('✅ config.js generado por GitHub Actions');
+          EOF
+
+      - name: List files (debug)
+        run: ls -la
+
+      # Si tienes paso de build (npm run build), agrégalo aquí
+      # - name: Install and build
+      #   run: |
+      #     npm ci
+      #     npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .   # ajusta a ./build si necesitas

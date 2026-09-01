@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description"
+        content="Federico Feressin - Desarrollador web full-stack especializado en interfaces modernas y responsive">
+    <meta name="keywords" content="desarrollador, web, portfolio, HTML, CSS, JavaScript, PHP, MySQL">
+    <meta name="author" content="Federico Feressin">
+    <title>Federico Feressin — Desarrollador Web Full-Stack</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%2300d9ff'>F</text></svg>">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Skip to main content (accessibility) -->
+    <a href="#inicio" class="skip-to-main">Saltar al contenido principal</a>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
+        <div class="container-lg">
+            <a class="navbar-brand logo" href="#inicio">
+                <span class="brand-icon">FF</span>Federico Feressin
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="inicio" class="hero d-flex align-items-center">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container-lg">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 hero-content">
+                    <div class="badge-intro mb-3">
+                        <i class="bi bi-rocket-takeoff"></i>
+                        Disponible para nuevos proyectos
+                    </div>
+                    <h1 class="mb-4">Hola, soy <span class="gradient-text">Federico Feressin</span></h1>
+                    <p class="lead description">Desarrollador full-stack con enfoque en crear interfaces modernas,
+                        accesibles y de alto rendimiento. Especializado en frontend con HTML, CSS y JavaScript,
+                        y backend con C#, PHP y MySQL.</p>
+                    <div class="mt-5 d-flex gap-3 flex-wrap">
+                        <a class="btn btn-cta btn-lg" href="#proyectos">
+                            <i class="fa-solid fa-folder-open me-2"></i>Ver proyectos
+                        </a>
+                        <a class="btn btn-outline-light btn-lg" href="#contacto">
+                            <i class="fa-solid fa-paper-plane me-2"></i>Contactame
+                        </a>
+                    </div>
+                    <div class="mt-4 social-hero">
+                        <a href="https://github.com/FedericoFeressin" target="_blank" rel="noopener noreferrer"
+                            class="social-hero-link" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/federico-feressin-45704331b/" target="_blank"
+                            rel="noopener noreferrer" class="social-hero-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/el_fedexs/?hl=es-la" target="_blank"
+                            rel="noopener noreferrer" class="social-hero-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="profile-card">
+                        <div class="profile-border" aria-hidden="true"></div>
+                        <img class="profile-pic" src="Resources/img/cvperfil.png"
+                            alt="Foto de perfil de Federico Feressin" loading="lazy">
+                        <div class="floating-icons" aria-hidden="true">
+                            <span class="badge tech">HTML5</span>
+                            <span class="badge tech">CSS3</span>
+                            <span class="badge tech">JS</span>
+                            <span class="badge tech">C#</span>
+                            <span class="badge tech">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="about py-lg-5 py-4">
+        <div class="container-lg">
+            <h2 class="section-title text-center mb-5">Sobre mí</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <p class="about-text">Soy un desarrollador apasionado por crear soluciones web de calidad. Con
+                            experiencia en frontend y backend, me especializo en desarrollar interfaces intuitivas que
+                            comuniquen la intención del producto.</p>
+                        <p class="about-text">Me gusta escribir código limpio y mantenible, optimizar el rendimiento y
+                            asegurar que cada proyecto cumpla con estándares de accesibilidad y responsive design.</p>
+                        <div class="about-stats mt-5">
+                            <div class="stat-item">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Proyectos completados</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2+</div>
+                                <div class="stat-label">Años de experiencia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Código limpio</h3>
+                                <p>Escribo código mantenible y bien estructurado siguiendo mejores prácticas</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-mobile"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Responsive Design</h3>
+                                <p>Sitios que se adaptan perfectamente a cualquier dispositivo</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fa-solid fa-zap"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Performance</h3>
+                                <p>Optimización de velocidad y carga para mejor experiencia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="skills py-lg-5 py-4">
+        <div class="container-lg">
+            <h2 class="section-title text-center mb-5">Habilidades</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h3 class="skill-category">Frontend</h3>
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between skill-title">
+                                <span>HTML / CSS</span><strong>95%</strong>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar skill-progress" role="progressbar" style="width: 95%"
+                                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-3">
+                            <div class="d-flex justify-content-between skill-title">
+                                <span>JavaScript</span><strong>85%</strong>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar skill-progress" role="progressbar" style="width: 85%"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h3 class="skill-category">Backend</h3>
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between skill-title">
+                                <span>C# / .NET</span><strong>80%</strong>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar skill-progress" role="progressbar" style="width: 80%"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-3">
+                            <div class="d-flex justify-content-between skill-title">
+                                <span>PHP</span><strong>45%</strong>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar skill-progress" role="progressbar" style="width: 45%"
+                                    aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <h3 class="skill-category">Herramientas</h3>
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between skill-title">
+                                <span>MySQL</span><strong>75%</strong>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar skill-progress" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item mt-3">
+                            <div class="d-flex justify-content-between skill-title">
+                                <span>UI / UX</span><strong>85%</strong>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar skill-progress" role="progressbar" style="width: 85%"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="projects py-lg-5 py-4">
+        <div class="container-lg">
+            <h2 class="section-title text-center mb-5">Proyectos destacados</h2>
+            <div class="row gy-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="Resources/img/Premium-Quality-Website.png"
+                                alt="Sitio web de Concesionaria de autos" class="project-img" loading="lazy">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-body p-4">
+                            <h3 class="project-title">Concesionaria de autos</h3>
+                            <p class="project-description">Sitio responsive con catálogo de vehículos, filtros avanzados
+                                y galería interactiva. Publicado en GitHub Pages.</p>
+                            <div class="project-tech mt-3 mb-4">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/FedericoFeressin/Premium-Quality-Website" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-outline-light flex-grow-1"
+                                    aria-label="Ver código en GitHub">
+                                    <i class="fa-brands fa-github me-2"></i>Código
+                                </a>
+                                <a href="https://federicoferessin.github.io/Premium-Quality-Website/" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-light"
+                                    aria-label="Ver demo en vivo">
+                                    <i class="fa-solid fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="Resources/img/Cap-FanPage-AC.png"
+                                alt="FanPage temática de Assassin's Creed Valhalla" class="project-img" loading="lazy">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-body p-4">
+                            <h3 class="project-title">Fan Page de AC Valhalla</h3>
+                            <p class="project-description">Una Fan Page temática con énfasis en layout innovador,
+                                tipografía
+                                visual y experiencia de usuario inmersiva.</p>
+                            <div class="project-tech mt-3 mb-4">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/FedericoFeressin/FanPage-de-AC-Valhalla" target="_blank"
+                                    class="btn btn-sm btn-outline-light flex-grow-1 disable"
+                                    aria-label="Código no disponible">
+                                    <i class="fa-brands fa-github me-2"></i>Código
+                                </a>
+                                <a href="https://federicoferessin.github.io/FanPage-de-AC-Valhalla/" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-sm btn-light"
+                                    aria-label="Ver demo en vivo">
+                                    <i class="fa-solid fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="Resources/img/EnigmaSolutions.webp" alt="Enigma Solutions" class="project-img"
+                                loading="lazy">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-body p-4">
+                            <h3 class="project-title">Enigma Solutions</h3>
+                            <p class="project-description">Página web de un emprendimiento tecnológico entre
+                                desarrolladores amigos </p>
+                            <div class="project-tech mt-3 mb-4">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://enigma-solutions.fedeferessin2001.workers.dev/" target="_blank"
+                                    class="btn btn-sm btn-outline-light flex-grow-1 disable"
+                                    aria-label="Código no disponible">
+                                    <i class="fa-brands fa-github me-2"></i>Página Oficial
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="Resources/img/Gestor-Tareas-Personal.png" alt="Gestor de Tareas"
+                                class="project-img" loading="lazy">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-body p-4">
+                            <h3 class="project-title">Gestor de Tareas</h3>
+                            <p class="project-description">Una aplicación web para gestionar tareas y mejorar la
+                                productividad.</p>
+                            <div class="project-tech mt-3 mb-4">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">Blazor</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/FedericoFeressin/GestorTareasIntegrador" target="_blank"
+                                    class="btn btn-sm btn-outline-light flex-grow-1 disable"
+                                    aria-label="Código no disponible">
+                                    <i class="fa-brands fa-github me-2"></i>Código
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact py-lg-5 py-4">
+        <div class="container-lg">
+            <h2 class="section-title text-center mb-5">Iniciemos un proyecto</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-intro text-center mb-5">
+                        <p class="lead">¿Tienes una idea o proyecto en mente? Me encantaría escucharte. Contactame y
+                            hablemos sobre cómo puedo ayudarte.</p>
+                    </div>
+
+                    <form id="contactForm" class="contact-form p-5 rounded-4" novalidate>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input id="name" class="form-control" type="text" placeholder="Tu nombre" required>
+                                    <label for="name">Nombre completo</label>
+                                </div>
+                                <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input id="email" class="form-control" type="email" placeholder="Tu correo"
+                                        required>
+                                    <label for="email">Correo electrónico</label>
+                                </div>
+                                <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea id="message" class="form-control" style="min-height: 150px;"
+                                        placeholder="Tu mensaje" required></textarea>
+                                    <label for="message">Mensaje</label>
+                                </div>
+                                <div class="invalid-feedback">Por favor ingresa tu mensaje.</div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-cta btn-lg w-100">
+                                    <i class="fa-solid fa-paper-plane me-2"></i>Enviar mensaje
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="contact-alt text-center mt-4">
+                        <p class="">O escríbeme directamente a <a href="mailto:fedeferessin2001@gmail.com"
+                                class="contact-email">fedeferessin2001@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4">
+        <div class="container-lg text-center">
+            <div class="social-links mb-3">
+                <a class="social-link" href="https://github.com/FedericoFeressin" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/federico-feressin-45704331b/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a class="social-link" href="https://www.instagram.com/el_fedexs/?hl=es-la" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <small>© 2025 Federico Feressin. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- EmailJS Library (usar email.min.js para exponer `emailjs`) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Configuration -->
+    <script src="config.js"></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
