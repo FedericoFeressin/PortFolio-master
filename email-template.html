@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Nuevo mensaje - Portfolio Federico Feressin</title>
+  <style>
+    body{margin:0;background:#f4f7fb;font-family:Arial,Helvetica,sans-serif;color:#111}
+    .card{max-width:680px;margin:24px auto;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 8px 30px rgba(16,24,40,0.08)}
+    .hdr{background:linear-gradient(90deg,#00d9ff,#7c3aed);padding:20px;color:#fff}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;border-radius:8px;background:#fff;color:#041028;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px}
+    .brand-title{font-weight:700;font-size:18px;margin:0}
+    .brand-subtitle{font-size:13px;opacity:.9;margin-top:4px;margin:0}
+    .content{padding:20px;color:#1f2937;font-size:15px;line-height:1.5}
+    .label{font-weight:700;margin-bottom:6px;color:#111827;display:block}
+    .box{background:#f3f6fb;padding:12px;border-radius:6px;color:#0f1724;word-break:break-word}
+    .section{margin-bottom:16px}
+    .meta{font-size:13px;color:#6b7280;margin-top:12px;padding-top:12px;border-top:1px solid #e5e7eb}
+    .footer{padding:16px;background:#fbfdff;color:#6b7280;font-size:13px;border-top:1px solid rgba(15,23,42,0.03);text-align:center}
+    a{color:#0b1020;text-decoration:none}
+    a:hover{text-decoration:underline}
+    @media (max-width:520px){.card{margin:12px}.brand-title{font-size:16px}}
+  </style>
+</head>
+<body>
+  <div class="card" role="article" aria-labelledby="subject">
+    <!-- HEADER -->
+    <div class="hdr">
+      <div class="brand">
+        <div class="logo">FF</div>
+        <div>
+          <h1 id="subject" class="brand-title">Nuevo mensaje desde Portfolio</h1>
+          <p class="brand-subtitle">Para: {{to_email}}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <p style="margin:0 0 16px">Has recibido un nuevo mensaje de contacto desde el formulario de tu portfolio. Detalles a continuación:</p>
+
+      <!-- REMITENTE -->
+      <div class="section">
+        <label class="label">📋 Remitente</label>
+        <div class="box">{{from_name}}</div>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="section">
+        <label class="label">📧 Correo de contacto</label>
+        <div class="box"><a href="mailto:{{from_email}}">{{from_email}}</a></div>
+      </div>
+
+      <!-- MENSAJE -->
+      <div class="section">
+        <label class="label">💬 Mensaje</label>
+        <div class="box" style="white-space:pre-wrap">{{message}}</div>
+      </div>
+
+      <!-- METADATA -->
+      <div class="meta">
+        <div><strong>Fecha y hora:</strong> {{timestamp}}</div>
+        <div style="margin-top:6px"><small>ID: {{reply_to}}</small></div>
+      </div>
+
+      <!-- CALL TO ACTION -->
+      <p style="margin-top:20px;margin-bottom:0">Puedes responder directamente a este correo o enviar un email a <strong><a href="mailto:{{from_email}}">{{from_email}}</a></strong>.</p>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p style="margin:0">Este mensaje fue enviado desde el formulario de contacto de tu portfolio.<br>
+      <small style="color:#9ca3af">© 2025 Federico Feressin - Portfolio</small></p>
+    </div>
+  </div>
+</body>
+</html>
